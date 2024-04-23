@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(1, 190, 20);
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 20px 0 30px;
+    width: 1200px;
+
+}
+
+.main img{
+    width: 100%;
+}
+/* 
+img.animate {
+    transition: 0.9s;
+    transform: rotateY(180deg);
+  } */
+
+  img{
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+
+  .is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    
+  }
+
+  h3{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .bg-overly{
+background-color: rgba(0, 0, 0,.8);
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 1;
+top: 0;
+transition: 5ms;
+  }
+
+  .centext {
+    width: 40%;
+    background-color: rgba(0, 0, 0,.5);
+    margin:20vh auto 0;
+    text-align: center;
+    padding: 5rem 0;
+    font-size: 5rem;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    color: gainsboro;
+}
